@@ -1,4 +1,6 @@
 # Instalar: pip install gTTS playsound
+# gTTS (Google Text-to-Speech) convierte texto en un archivo de audio (ej: .mp3)
+# playsound reproduce archivos de audio simples.
 from gtts import gTTS
 from playsound import playsound
 import os
@@ -20,6 +22,13 @@ def texto_a_voz(texto, idioma='es', nombre_archivo='salida.mp3'):
 
     # Reproducir el archivo de audio
     playsound(nombre_archivo)
+    # os.system('start ' + nombre_archivo)  # Alternativa para Windows
 
     # Eliminar el archivo de audio después de reproducirlo
     os.remove(nombre_archivo)
+
+
+if __name__ == "__main__":
+    texto = "Hola, este es un ejemplo de conversión de texto a voz utilizando gTTS en Python."
+    texto_a_voz(texto)
+    
