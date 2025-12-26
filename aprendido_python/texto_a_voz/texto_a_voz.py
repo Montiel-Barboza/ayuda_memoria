@@ -29,6 +29,6 @@ def texto_a_voz(texto, idioma='es', nombre_archivo='salida.mp3'):
 
 
 if __name__ == "__main__":
-    texto = "Hola, este es un ejemplo de conversión de texto a voz utilizando gTTS en Python."
+    texto = "Acá se escribe el texto que se desea convertir a voz."
     texto_a_voz(texto)
     
